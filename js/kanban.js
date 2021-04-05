@@ -38,7 +38,7 @@ const create_item = () => {
 
   var save_btn = document.createElement("button");
 
-  save_btn.innerHTML = Save;
+  save_btn.innerHTML = 'Save';
 
   save_btn.addEventListener("click", () => {
     error.innerHTML = "";
