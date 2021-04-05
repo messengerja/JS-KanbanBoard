@@ -53,13 +53,15 @@ const create_item = () => {
   });
 
   item.append(save_btn);
+
+  return item;
 };
 
 document.querySelectorAll('.drop').forEach(element => {
   element.addEventListener("drop", (event) => {
     event.preventDefault();
     const id = event.dataTransfer.getData('text');
-    event.target.append(document.getElementById(id));
+    document.getElementById(id) = event.target.append(id);
   });
 
   element.addEventListener("dragover", (event) => {
